@@ -25,5 +25,5 @@ def clean_idp_data():
     merged_df = pd.read_csv(all_data,ignore_index = True)
     merged_df.drop_duplicates(inplace = True)
     merged_df.to_csv(os.path.join(processed_dir,"idp_data_cleaned.csv"),index = False)
-    print("CLean data saved to processed folder")
+    print("Clean data saved to processed folder")
     return merged_df

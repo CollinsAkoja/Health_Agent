@@ -25,7 +25,7 @@ def fetch_sample():
     }
 
     df = pd.DataFrame(data)
-    csv_path = os.path.join(DATA_DIR, f"idp_data_{datetime.now().strftime('%Y%m%d')}.csv")
+    csv_path = os.path.join(data_dir, f"idp_data_{datetime.now().strftime('%Y%m%d')}.csv")
     df.to_csv(csv_path, index = False)
     print(f"Data saved to {csv_path}")
     return df
